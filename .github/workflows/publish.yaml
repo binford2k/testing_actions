@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ false }}
+    if: ${{ false }} # remove this line to enable the job
     steps:
     - name: Get latest tag
       run: echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
